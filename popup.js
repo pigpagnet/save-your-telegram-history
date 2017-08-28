@@ -89,7 +89,7 @@ function displayMessages(msg){
   }
   linesAfterMessages.reverse()
   receivedMsg.reverse()
-  $('#myTextarea').html(textArea).text()
+  $('#myTextarea').val(textArea)
   if (first_request){
     first_request = false
     restoreTextareaScroll('#myTextarea')
