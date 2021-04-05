@@ -190,6 +190,7 @@ function processGetHistoryResponse(peerID,res,AppMesMng,AppUsrMng,AppChatsMng,Ap
 						msgServiceText = 'upgraded the group to a supergroup'
 						break
 					case 'messageActionChatAddUser': //invited {users.name....}
+					case 'messageActionChatAddUsers':
 						msgServiceText = 'invited '
 						for(var iuser=0; iuser<msgWrap.action.users.length; iuser++){
 							var invited_uid = msgWrap.action.users[iuser]
